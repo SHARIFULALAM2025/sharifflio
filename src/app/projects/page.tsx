@@ -180,7 +180,7 @@ export default function Project() {
             {filteredProjects.map((project) => (
               <motion.article
                 key={project.id}
-                variants={cardVariants}
+                
                 layout
                 initial="hidden"
                 animate="visible"
