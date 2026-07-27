@@ -69,7 +69,7 @@ const Loader = ({ children }: LoaderProps) => {
                 src="/image/profile.jpg"
                 width={56}
                 height={56}
-                className="object-contain w-full h-full"
+                className="object-top w-full h-full"
                 alt="logo image"
                 priority
               />
