@@ -6,7 +6,7 @@ import Sidebar from '@/Components/Sidebar'
 
 
 export const metadata: Metadata = {
-  title: 'Ahashan Habib Utsho | Portfolio',
+  title: 'shariful alam| Portfolio',
   description: 'Full Stack Developer Portfolio',
 }
 
