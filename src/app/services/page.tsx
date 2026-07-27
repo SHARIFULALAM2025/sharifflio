@@ -66,7 +66,8 @@ const techStack = [
   'Typescript',
   'Express.js',
   'MongoDB',
-  'Mongoose',
+  'PostgreSQL',
+  "Laravel"
 ]
 
 export default function ServicesPage() {
@@ -79,10 +80,10 @@ export default function ServicesPage() {
           animate={{ opacity: 1, y: 0 }}
           className="mb-14"
         >
-          <h1 className="bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-4xl font-bold text-transparent sm:text-5xl">
+          <h1 className="bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-center text-4xl font-bold text-transparent sm:text-5xl">
             Services
           </h1>
-          <p className="mt-4 max-w-xl text-slate-400">
+          <p className="mt-4 text-slate-400 text-center">
             I don’t just build websites, I craft{' '}
             <span className="text-violet-400">digital experiences</span> that
             convert, perform, and leave a lasting impression.

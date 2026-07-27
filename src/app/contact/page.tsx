@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { motion } from 'framer-motion'
 import { HiLocationMarker, HiPhone, HiMail } from 'react-icons/hi'
 import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa'
@@ -132,38 +132,37 @@ export default function Contact() {
 
             <div className="relative bg-[#1a1035] border border-violet-500/30 rounded-2xl p-6 sm:p-8 shadow-xl">
               <h2 className="text-xl font-semibold text-white mb-6">
-                Send Me a Message
+                Send Me a Email
               </h2>
 
               <form className="space-y-5">
                 {/* Name + Email */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm text-violet-200/80 mb-1.5">
-                      Your Name
-                    </label>
-                    <input
-                      type="text"
-                      placeholder="John Doe"
-                      className="w-full px-4 py-2.5 rounded-lg bg-violet-950/50 border border-violet-500/20 text-white placeholder:text-violet-300/40 focus:outline-none focus:border-violet-400 focus:ring-1 focus:ring-violet-400/50 transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm text-violet-200/80 mb-1.5">
-                      Your Email
-                    </label>
-                    <input
-                      type="email"
-                      placeholder="john@example.com"
-                      className="w-full px-4 py-2.5 rounded-lg bg-violet-950/50 border border-violet-500/20 text-white placeholder:text-violet-300/40 focus:outline-none focus:border-violet-400 focus:ring-1 focus:ring-violet-400/50 transition-all"
-                    />
-                  </div>
+
+                <div>
+                  <label className="block text-sm text-violet-200/80 mb-1.5">
+                   Subject:
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="write here subject...."
+                    className="w-full px-4 py-2.5 rounded-lg bg-violet-950/50 border border-violet-500/20 text-white placeholder:text-violet-300/40 focus:outline-none focus:border-violet-400 focus:ring-1 focus:ring-violet-400/50 transition-all"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm text-violet-200/80 mb-1.5">
+                    Your Email:
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="write your valid email... "
+                    className="w-full px-4 py-2.5 rounded-lg bg-violet-950/50 border border-violet-500/20 text-white placeholder:text-violet-300/40 focus:outline-none focus:border-violet-400 focus:ring-1 focus:ring-violet-400/50 transition-all"
+                  />
                 </div>
 
                 {/* Message */}
                 <div>
                   <label className="block text-sm text-violet-200/80 mb-1.5">
-                    Message
+                    Message:
                   </label>
                   <textarea
                     rows={5}
