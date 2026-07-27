@@ -32,7 +32,11 @@ const socialLinks = [
     href: 'https://github.com/SHARIFULALAM2025',
     label: 'GitHub',
   },
-  { icon: SiLeetcode, href: '#', label: 'LeetCode' },
+  {
+    icon: SiLeetcode,
+    href: 'https://leetcode.com/u/SHARIFUL_ALAM',
+    label: 'LeetCode',
+  },
 ]
 
 const stats = [

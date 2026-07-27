@@ -1,7 +1,7 @@
 'use client'
 import { motion } from 'framer-motion'
 import { HiLocationMarker, HiPhone, HiMail } from 'react-icons/hi'
-import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa'
+import { FaLinkedinIn, FaFacebookF, FaGithub, FaArrowRight } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si' // or replace with your preferred icon
 
 export default function Contact() {
@@ -112,7 +112,7 @@ export default function Contact() {
                   <FaGithub size={16} />
                 </a>
                 <a
-                  href="https://leetcode.com"
+                  href="https://leetcode.com/u/SHARIFUL_ALAM"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-[var(--card)] border border-[var(--border)] flex items-center justify-center text-[var(--muted)] hover:text-white hover:border-[var(--primary)] hover:bg-[var(--primary)]/20 transition-all duration-300"
@@ -202,8 +202,8 @@ export default function Contact() {
                     type="submit"
                     className="px-8 py-3 rounded-xl bg-gradient-to-r from-[var(--primary)] to-fuchsia-500 text-white font-medium hover:opacity-90 shadow-lg shadow-violet-500/30 transition-all duration-300 flex items-center gap-2"
                   >
-                    Send Message
-                    <span>→</span>
+                    Send Email
+                    <FaArrowRight />
                   </button>
                 </div>
               </form>
