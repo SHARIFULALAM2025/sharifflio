@@ -12,6 +12,8 @@ import { SiLeetcode } from 'react-icons/si'
 import { useForm } from 'react-hook-form'
 import emailjs from '@emailjs/browser'
 import { useState } from 'react'
+import { fireSuccessToast } from '@/Components/SuccessAlert'
+import { useRouter } from 'next/navigation'
 
 type Inputs = {
   subject: string
@@ -24,7 +26,7 @@ type Inputs = {
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
-
+const router=useRouter()
   const {
     register,
     handleSubmit,
@@ -50,7 +52,10 @@ export default function Contact() {
         'i5XgpyNRK4OoyQk0O'
       )
 
-      setStatus('success')
+      fireSuccessToast(
+        "Email Submitted Successfully!", "Please wait a moment, we will process it shortly"
+      )
+      router.push("/")
       reset()
     } catch (error) {
       console.error(error)
