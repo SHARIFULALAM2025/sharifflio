@@ -173,7 +173,7 @@ export default function Contact() {
                     className="w-full px-4 py-2.5 rounded-lg bg-violet-950/50 border border-violet-500/20 text-white placeholder:text-violet-300/40 focus:outline-none focus:border-violet-400 focus:ring-1 focus:ring-violet-400/50 transition-all resize-none"
                   />
                 </div>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                   <div>
                     <label className="block text-sm text-violet-200/80 mb-1.5">
                       Full Name:

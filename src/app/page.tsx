@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* ===== First Screen ===== */}
-      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pl-20">
+      <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden px-4 pb-24 md:pl-20 md:pb-0">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-violet-900/20 via-transparent to-transparent" />
 
         {/* Profile Image */}
@@ -76,13 +76,13 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="relative mb-6"
         >
-          <div className="relative h-36 w-36 overflow-hidden rounded-2xl lg:border-4 border-2 border-violet-500/60 shadow-[0_0_40px_rgba(139,92,246,0.4)] sm:h-44 sm:w-44 md:h-52 md:w-52 lg:h-96 lg:w-96">
+          <div className="relative overflow-hidden rounded-2xl border-2 border-violet-500/60 shadow-[0_0_40px_rgba(139,92,246,0.4)] h-36 w-36 sm:h-44 sm:w-44 md:h-52 md:w-52 lg:h-96 lg:w-96 lg:border-4">
             <Image
               src="/image/profile.jpg"
               alt="SHARIFUL ALAM"
               fill
               sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, (max-width: 1024px) 208px, 240px"
-              className="object-cover object-top"
+              className="object-top"
               priority
             />
           </div>
@@ -122,14 +122,14 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
-          className="mt-3 text-lg bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent sm:text-xl md:text-2xl lg:text-3xl font-medium"
+          className="mt-3 bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent text-lg font-medium sm:text-xl md:text-2xl lg:text-3xl"
         >
           <TypewriterText />
         </motion.p>
       </section>
 
       {/* ===== Scroll Content ===== */}
-      <section className="flex flex-col items-center px-4 pb-20 pl-20">
+      <section className="flex flex-col items-center px-4 pb-12 md:pl-20 md:pb-20">
         {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -146,7 +146,6 @@ export default function Home() {
             <FaDownload className="h-4 w-4" />
             Download Resume
           </a>
-
           <Link
             href="/projects"
             className="inline-flex items-center gap-2 rounded-xl border border-violet-500/60 px-6 py-3 text-sm font-medium text-violet-300 transition hover:bg-violet-500/10"

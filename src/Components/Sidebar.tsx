@@ -25,15 +25,34 @@ export default function Sidebar() {
   const pathname = usePathname()
 
   return (
-    <aside className="fixed left-0 top-0 z-50 flex h-screen w-16 flex-col items-center justify-center bg-[#0b1120]/80 backdrop-blur-md">
-      <nav className="flex flex-col items-center">
+    <aside
+      className="fixed z-50 flex items-center justify-center bg-[#0b1120]/80 backdrop-blur-md bottom-0 left-0 right-0 h-16 w-full flex-row md:bottom-auto md:left-0 md:top-0 md:right-auto md:h-screen md:w-16 md:flex-col"
+    >
+      <nav
+        className="flex items-center flex-row justify-center gap-1 md:flex-col md:gap-0"
+      >
         {navItems.map((item) => {
           const isActive = pathname === item.href
           const Icon = item.icon
 
           const linkClassName = isActive
-            ? 'group relative flex h-12 w-16 items-center justify-center transition-all duration-300 bg-gradient-to-r from-indigo-600 to-violet-600 text-white'
-            : 'group relative flex h-12 w-16 items-center justify-center transition-all duration-300 text-white/80 hover:bg-white/5 hover:text-white'
+            ? `group relative flex items-center justify-center
+                transition-all duration-300
+                bg-gradient-to-r from-indigo-600 to-violet-600 text-white
+                /* Mobile size */
+                h-12 w-12 rounded-xl
+                /* Desktop size */
+                md:h-12 md:w-16 md:rounded-none
+              `
+            : `
+                group relative flex items-center justify-center
+                transition-all duration-300
+                text-white/80 hover:bg-white/5 hover:text-white
+                /* Mobile size */
+                h-12 w-12 rounded-xl
+                /* Desktop size */
+                md:h-12 md:w-16 md:rounded-none
+              `
 
           return (
             <Link key={item.href} href={item.href} className={linkClassName}>
@@ -45,10 +64,17 @@ export default function Sidebar() {
                 <Icon className="h-5 w-5" />
               </motion.div>
 
-              {/* Tooltip */}
+              {/* Tooltip - only visible on desktop */}
               <span
                 suppressHydrationWarning
-                className="absolute left-full top-0 flex h-12 items-center whitespace-nowrap bg-gradient-to-r from-violet-600 to-indigo-600 px-3 text-base text-white opacity-0 translate-x-2 transition-all duration-200 ease-out group-hover:opacity-100 group-hover:translate-x-0"
+                className="
+                  absolute left-full top-0 hidden h-12 items-center
+                  whitespace-nowrap bg-gradient-to-r from-violet-600 to-indigo-600
+                  px-3 text-base text-white opacity-0 translate-x-2
+                  transition-all duration-200 ease-out
+                  group-hover:opacity-100 group-hover:translate-x-0
+                  md:flex
+                "
               >
                 {item.label}
               </span>

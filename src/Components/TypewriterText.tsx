@@ -31,7 +31,7 @@ export const TypewriterText=() =>{
 
         if (displayedText.length === 0) {
           setIsDeleting(false)
-          // এখানে সবসময় পরের index এ যাবে, শেষ item এর পর আবার শুরু থেকে — infinite loop, কখনো থামবে না
+         
           setRoleIndex((prev) => (prev + 1) % roles.length)
         }
       }
