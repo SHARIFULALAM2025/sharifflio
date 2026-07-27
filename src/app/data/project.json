@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "title": "Dreams Estate",
+    "fullTitle": "Dreams Estate  - Modern Real Estate platform",
+    "image":"https://i.ibb.co.com/Sw6GCPMc/Capkkfofture.jpg",
+    "description": "A comprehensive real estate platform for buying, selling, and renting properties with advanced search and secure management.",
+    "purpose": "Dreams Estate simplifies property transactions by centralizing listings, enhancing transparency between owners and seekers, and providing a seamless management dashboard.",
+    "features": [
+      "Private Routes: Only authenticated users can access listing details.",
+      "CRUD Operations: Users can Add, Update, and Delete their own property listings.",
+      "Advanced Filtering: Search by location, price range, and property type.",
+      "User-Specific Data: Personalized dashboard to view own properties and ratings.",
+      "Secure Booking: Users can view recent properties and book them instantly.",
+      "Rating System: Integration of @smastrom/react-rating for property feedback."
+    ],
+    "techStack": {
+      "frontend": ["React 19", "javascript", "Tailwind CSS", "React Router"],
+      "backend": ["PostgreSQL", "Firebase Auth", "Knex.js"]
+    },
+    "liveLink": "https://dreams-estate-zeta.vercel.app/",
+    "githubClient": "https://github.com/SHARIFULALAM2025/Dreams-Estate",
+    "githubServer":"",
+    "featured": false,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },
+  {
+    "id": 2,
+    "title": "BookCourier - Smart Book Delivery & Management",
+    "fullTitle": "BookCourier - Smart Book Delivery & Management",
+    "image": "https://i.ibb.co.com/0VYcgYqx/Capture.png",
+    "description": "BookCourier is a library delivery management system where a users can request book pickup or delivery from this near libraries. a user can easily order a book and easily payment . it is A fast, modern and user-friendly web application for delivering books to the doorsteps of users in Bangladesh. This project provides an online library interface with book browsing, searching, sorting, user authentication, payment integration and complete delivery coverage mapping.",
+    "purpose": "BookCourier aims to bridge the gap between readers and libraries with an intuitive UI, fast delivery support, and secure payment integration.",
+    "features": [
+      "Real-time Book Search & Filtering (Title, Price, Ratings)",
+      "Interactive Leaflet Map for Coverage Tracking",
+      "Stripe Payment Gateway Integration",
+      "Role-Based Dashboard (Admin & User)",
+      "Dynamic Feedback Slider with Ratings",
+      "Responsive UI/UX optimized for all devices"
+    ],
+    "techStack": {
+      "frontend": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Material UI",
+        "TanStack Query",
+        "Framer Motion"
+      ],
+      "backend": ["Express.js", "MongoDB Atlas", "Stripe", "Firebase Auth"]
+    },
+    "liveLink": "https://assignment-11-7f7d0.web.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-11",
+    "featured": true,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },
+  {
+    "id": 3,
+    "title": "HomeNest",
+    "fullTitle": "HomeNest - Modern Real Estate Marketplace",
+    "image": "https://i.ibb.co.com/9m5RhmhR/Captsrsfure.png",
+    "description": "A comprehensive real estate platform for buying, selling, and renting properties with advanced search and secure management.",
+    "purpose": "HomeNest simplifies property transactions by centralizing listings, enhancing transparency between owners and seekers, and providing a seamless management dashboard.",
+    "features": [
+      "Private Routes: Only authenticated users can access listing details.",
+      "CRUD Operations: Users can Add, Update, and Delete their own property listings.",
+      "Advanced Filtering: Search by location, price range, and property type.",
+      "User-Specific Data: Personalized dashboard to view own properties and ratings.",
+      "Secure Booking: Users can view recent properties and book them instantly.",
+      "Rating System: Integration of @smastrom/react-rating for property feedback."
+    ],
+    "techStack": {
+      "frontend": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React Router"
+      ],
+      "backend": ["MongoDB", "Firebase Auth", "Dotenv"]
+    },
+    "liveLink": "https://rococo-bombolone-0cae58.netlify.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-10",
+    "featured": false,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },
+  {
+    "id": 4,
+    "title": "Care.xyz",
+    "fullTitle": "Care.xyz - On-Demand Caregiving Platform",
+    "image": "https://i.ibb.co.com/BKdpw6Nj/Captfthtfhure.png",
+    "description": "Care.xyz is a trusted caregiving web platform that helps users easily find and book reliable babysitting, elderly care, and special home care services. It offers secure authentication, location-based booking, cost calculation, and booking tracking to make caregiving simple, safe, and accessible.",
+    "purpose": "Care.xyz aims to make caregiving services easy, secure, and accessible by providing a platform to hire professional caretakers based on duration and location.",
+    "features": [
+      "Dynamic Booking: Location-based hiring with total cost calculation.",
+      "Service Management: Specialized categories (Baby Care, Elderly, Sick Care).",
+      "Booking Tracking: \"My Booking\" page for Pending/Confirmed/Completed status.",
+      "Secure Auth: Email/Password and Google Social Login via NextAuth.",
+      "Notifications: Automatic email alerts using Nodemailer.",
+      "Next.js Power: Fast performance with Server Components and App Router."
+    ],
+    "techStack": {
+      "frontend": [
+        "Next.js 16",
+        "React 19",
+        "Tailwind CSS",
+        "DaisyUI",
+        "Swiper.js"
+      ],
+      "backend": [
+        "MongoDB",
+        "NextAuth.js",
+        "React Query",
+        "Nodemailer",
+        "Bcryptjs"
+      ]
+    },
+    "liveLink": "https://old-care.vercel.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-12",
+    "featured": true,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },
+  {
+    "id": 5,
+    "title": "E-commercial-website",
+    "role":"Frontend Developer",
+    "status":"complete",
+    "fullTitle": "E-commercial-website is an E-commercial platform",
+    "image": "https://i.ibb.co.com/Myh4HsCh/Capsgsgsture.png",
+    "description": "it is an E-commercial-website website .user can find his/her product choose easily . they can filter, search the name of category .it has smart feature sech as carousel .smart contract , dashboard-admin customer...",
+    "purpose": "this is a smart project . user can easily order his/her project",
+    "features": [
+      "Dynamic search: category based search",
+      "Service Management: category based search (man---women).",
+      "order : \"easy functionality",
+      "contact: smart contact system",
+      "browse: category wise browse"
+    ],
+    "techStack": {
+      "frontend": ["React 19", "Tailwind CSS", "Material UI", "Swiper.js"],
+      "backend": ["MongoDB", "Nodemailer"]
+    },
+    "liveLink": "https://my-website-kappa-blue.vercel.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/E-commercial-website/tree/main/frontend/my-website",
+    "featured": true,
+    "category": "fullstack"
+  }
+]

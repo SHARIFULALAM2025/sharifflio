@@ -5,68 +5,17 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { GiThunderball } from 'react-icons/gi'
 import { LuExternalLink } from 'react-icons/lu'
-import { MdQrCode2 } from 'react-icons/md'
+
 import { FaArrowRight } from 'react-icons/fa'
 import Link from 'next/link'
 
+import data from "@/app/data/project.json";
+import { ProjectData } from '@/Components/Type'
 
 // ---------- Types ----------
 type ProjectCategory = 'all' | 'fullstack' | 'frontend'
 
-interface Project {
-  id: string
-  title: string
-  description: string
-  image: string
-  category: 'fullstack' | 'frontend'
-  featured?: boolean
-  tech: string[]
-  liveUrl?: string
-  githubUrl?: string
-  codeUrl?: string
-}
 
-// ---------- Dummy data ----------
-const projects: Project[] = [
-  {
-    id: '1',
-    title: 'DocEye',
-    description:
-      'The DocEye project is a Full Stack initiative. The project is actively being developed, and I am contributing as a Full Stack Developer to enhance its features.',
-    image: '/projects/doceye.png',
-    category: 'fullstack',
-    featured: true,
-    tech: ['Next.js', 'TypeScript', 'Tailwind', 'Hero UI', '+18'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: '2',
-    title: 'Car Cleanify',
-    description:
-      'The Car Cleanify project is a Full Stack initiative. This project has been successfully completed, showcasing the full scope of my work as a Full Stack Developer.',
-    image: '/projects/car-cleanify.png',
-    category: 'fullstack',
-    featured: true,
-    tech: ['Typescript', 'Tailwind', 'Redux', 'AntD', '+7'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  {
-    id: '3',
-    title: 'WizCraft Academy',
-    description:
-      'The WizCraft Academy project is a Full Stack initiative. This project has been successfully completed, showcasing the full scope of my work as a Full Stack Developer.',
-    image: '/projects/wizcraft.png',
-    category: 'fullstack',
-    tech: ['React', 'Tailwind', 'Express.js', 'MongoDB', '+1'],
-    liveUrl: '#',
-    githubUrl: '#',
-  },
-  // Add remaining projects here
-]
-
-// ---------- Animation variants ----------
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -93,17 +42,19 @@ const cardVariants = {
 
 // ---------- Component ----------
 export default function Project() {
+  const allData = data as ProjectData[]
+
   const [activeFilter, setActiveFilter] = useState<ProjectCategory>('all')
 
   const filteredProjects =
     activeFilter === 'all'
-      ? projects
-      : projects.filter((p) => p.category === activeFilter)
+      ? allData
+      : allData.filter((p) => p.category === activeFilter)
 
   const counts = {
-    all: projects.length,
-    fullstack: projects.filter((p) => p.category === 'fullstack').length,
-    frontend: projects.filter((p) => p.category === 'frontend').length,
+    all: allData.length,
+    fullstack: allData.filter((p) => p.category === 'fullstack').length,
+    frontend: allData.filter((p) => p.category === 'frontend').length,
   }
 
   return (
@@ -228,7 +179,7 @@ export default function Project() {
 
                   {/* Tech tags */}
                   <div className="mb-5 flex flex-wrap gap-2">
-                    {project.tech.map((t) => (
+                    {project.techStack.frontend.map((t) => (
                       <span
                         key={t}
                         className="rounded-md border border-[var(--border)] bg-[var(--card-hover)] px-2.5 py-1 text-xs text-[var(--muted)]"
@@ -241,9 +192,9 @@ export default function Project() {
                   {/* Footer actions */}
                   <div className="mt-auto flex items-center justify-between border-t border-[var(--border)] pt-4">
                     <div className="flex items-center gap-2">
-                      {project.liveUrl && (
+                      {project.image && (
                         <a
-                          href={project.liveUrl}
+                          href={project.liveLink}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="rounded-lg p-2 text-[var(--muted)] transition-colors hover:bg-[var(--card-hover)] hover:text-[var(--primary-light)]"
@@ -252,9 +203,9 @@ export default function Project() {
                           <LuExternalLink size={16} />
                         </a>
                       )}
-                      {project.githubUrl && (
+                      {project.githubClient && (
                         <a
-                          href={project.githubUrl}
+                          href={project.githubClient}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="rounded-lg p-2 text-[var(--muted)] transition-colors hover:bg-[var(--card-hover)] hover:text-[var(--primary-light)]"
@@ -263,17 +214,7 @@ export default function Project() {
                           <GiThunderball size={16} />
                         </a>
                       )}
-                      {project.codeUrl && (
-                        <a
-                          href={project.codeUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="rounded-lg p-2 text-[var(--muted)] transition-colors hover:bg-[var(--card-hover)] hover:text-[var(--primary-light)]"
-                          aria-label="Source code"
-                        >
-                          <MdQrCode2 size={16} />
-                        </a>
-                      )}
+
                     </div>
 
                     <Link
