@@ -15,7 +15,7 @@ import {
   FaRocket,
 } from 'react-icons/fa'
 import { SiLeetcode } from 'react-icons/si'
-
+import { FaArrowRight } from 'react-icons/fa'
 const socialLinks = [
   {
     icon: FaLinkedinIn,
@@ -150,7 +150,9 @@ export default function Home() {
             href="/projects"
             className="inline-flex items-center gap-2 rounded-xl border border-violet-500/60 px-6 py-3 text-sm font-medium text-violet-300 transition hover:bg-violet-500/10"
           >
-            Explore Projects →
+            Explore Projects
+            <FaArrowRight/>
+
           </Link>
         </motion.div>
 

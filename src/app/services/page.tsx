@@ -67,12 +67,12 @@ const techStack = [
   'Express.js',
   'MongoDB',
   'PostgreSQL',
-  "Laravel"
+  'Laravel',
 ]
 
 export default function ServicesPage() {
   return (
-    <section className="min-h-screen px-4 py-16 pr-20 sm:px-6 lg:px-10">
+    <section className="min-h-screen px-4 py-16 pb-28 md:pl-20 md:pr-6 md:pb-16 lg:px-10 lg:pl-20">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <motion.div
@@ -83,7 +83,7 @@ export default function ServicesPage() {
           <h1 className="bg-gradient-to-r from-violet-400 to-indigo-400 bg-clip-text text-center text-4xl font-bold text-transparent sm:text-5xl">
             Services
           </h1>
-          <p className="mt-4 text-slate-400 text-center">
+          <p className="mt-4 text-center text-slate-400">
             I don’t just build websites, I craft{' '}
             <span className="text-violet-400">digital experiences</span> that
             convert, perform, and leave a lasting impression.

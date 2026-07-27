@@ -41,7 +41,7 @@ const skillGroups = [
     title: 'Backend',
     icon: FaServer,
     color: 'from-blue-500 to-cyan-500',
-    skills: ['Express.js', 'MongoDB', 'PHP',"SQL","PostgreSQL","Laravel"],
+    skills: ['Express.js', 'MongoDB', 'PHP', 'SQL', 'PostgreSQL', 'Laravel'],
   },
   {
     title: 'Full Stack',
@@ -91,7 +91,6 @@ const infoCards = [
 
 const timeline = {
   experience: [
-
     {
       title: 'Programming Hero',
       role: 'Full Stack Developer Intern',
@@ -102,10 +101,10 @@ const timeline = {
     {
       title: 'Phitron',
       role: 'CSE Fundamentals with Phitron',
-      date: ' Running',
+      date: 'Running',
     },
     {
-      title: 'Hablu Programmer ',
+      title: 'Hablu Programmer',
       role: 'Frontend Developer',
       date: '24 Apr, 2025 - 17 Jun, 2025',
     },
@@ -118,7 +117,7 @@ const timeline = {
   education: [
     {
       title:
-        'Atish Dipankar University of Science & Technology, Uttara ,Dhaka-Bangladesh',
+        'Atish Dipankar University of Science & Technology, Uttara, Dhaka-Bangladesh',
       role: 'BSc in Computer Science and Engineering',
       date: 'Cumulative Grade Point Average (3.45/4.00) Expected Graduation: 2027',
     },
@@ -132,7 +131,7 @@ const timeline = {
 
 export default function AboutPage() {
   return (
-    <section className="min-h-screen px-4 py-16 pr-20 sm:px-6 lg:px-10">
+    <section className="min-h-screen px-4 py-16 pb-28 md:pl-20 md:pr-6 md:pb-16 lg:px-10 lg:pl-20">
       <div className="mx-auto max-w-6xl">
         {/* Header */}
         <motion.div
@@ -147,7 +146,7 @@ export default function AboutPage() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="mt-3 text-lg bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent sm:text-xl md:text-2xl lg:text-3xl font-medium"
+            className="mt-3 bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-lg font-medium text-transparent sm:text-xl md:text-2xl lg:text-3xl"
           >
             <TypewriterText />
           </motion.p>
@@ -209,7 +208,7 @@ export default function AboutPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="mb-16 grid gap-5 sm:grid-cols-3"
+          className="mb-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3"
         >
           {infoCards.map((card) => {
             const Icon = card.icon
@@ -242,7 +241,7 @@ export default function AboutPage() {
             Journey Timeline
           </h2>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
             {/* Experience */}
             <div>
               <div className="mb-5 flex items-center gap-2 text-violet-400">
@@ -255,7 +254,7 @@ export default function AboutPage() {
                     <span className="absolute -left-[25px] top-1.5 h-3 w-3 rounded-full bg-violet-500" />
                     <h4 className="font-medium text-white">{item.title}</h4>
                     <p className="text-sm text-violet-300">{item.role}</p>
-                    <p className="mt-1 text-xs bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+                    <p className="mt-1 bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-xs text-transparent">
                       {item.date}
                     </p>
                   </div>
@@ -275,7 +274,7 @@ export default function AboutPage() {
                     <span className="absolute -left-[25px] top-1.5 h-3 w-3 rounded-full bg-blue-500" />
                     <h4 className="font-medium text-white">{item.title}</h4>
                     <p className="text-sm text-blue-300">{item.role}</p>
-                    <p className="mt-1 text-xs bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
+                    <p className="mt-1 bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-xs text-transparent">
                       {item.date}
                     </p>
                   </div>
@@ -295,7 +294,7 @@ export default function AboutPage() {
                     <span className="absolute -left-[25px] top-1.5 h-3 w-3 rounded-full bg-emerald-500" />
                     <h4 className="font-medium text-white">{item.title}</h4>
                     <p className="text-sm text-emerald-300">{item.role}</p>
-                    <p className="mt-1 text-xs bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent ">
+                    <p className="mt-1 bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-xs text-transparent">
                       {item.date}
                     </p>
                   </div>
