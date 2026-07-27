@@ -9,6 +9,7 @@ import {
   FaRocket,
   FaGlobe,
   FaCheckCircle,
+  FaArrowRight,
 } from 'react-icons/fa'
 
 const services = [
@@ -144,9 +145,10 @@ export default function ServicesPage() {
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-violet-600 to-indigo-600 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-violet-500/25 transition hover:opacity-90"
+                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-violet-500/25 transition hover:opacity-90"
               >
-                Start a Project Together →
+                Start a Project Together
+                <FaArrowRight/>
               </Link>
             </motion.div>
           </div>

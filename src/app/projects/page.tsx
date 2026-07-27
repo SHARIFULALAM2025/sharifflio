@@ -281,9 +281,7 @@ export default function Project() {
                       className="flex items-center gap-1 text-sm font-medium text-[var(--primary-light)] transition-colors hover:text-[var(--primary)]"
                     >
                       View Details
-                      <span className="transition-transform group-hover:translate-x-0.5">
-                        →
-                      </span>
+                      <FaArrowRight />
                     </Link>
                   </div>
                 </div>
@@ -304,7 +302,7 @@ export default function Project() {
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-full bg-[var(--primary)] px-8 py-3.5 font-medium text-white shadow-lg shadow-violet-500/25 transition-all duration-300 hover:bg-[var(--primary-light)]"
+            className="inline-flex items-center gap-2 rounded-xl bg-[var(--primary)] px-8 py-3.5 font-medium text-white shadow-lg shadow-violet-500/25 transition-all duration-300 hover:bg-[var(--primary-light)]"
           >
             Start a Project
             <FaArrowRight />
