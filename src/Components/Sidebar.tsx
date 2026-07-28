@@ -81,7 +81,7 @@ const isHome = pathname === '/'
         </nav>
       </aside>
       {isHome && (
-        <aside className="fixed z-50 right-2 bottom-0 -translate-y-1/2 flex flex-col gap-2">
+        <aside className="fixed z-50 hidden md:flex right-2 bottom-0 -translate-y-1/2  flex-col gap-2">
           <a
             href={bestProjects[0].live}
             target="_blank"
