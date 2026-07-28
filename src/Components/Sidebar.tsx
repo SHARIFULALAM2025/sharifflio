@@ -47,8 +47,7 @@ const isHome = pathname === '/'
             const Icon = item.icon
 
             const linkClassName = isActive
-              ? `group relative flex items-center justify-center
-                transition-all duration-300vbg-gradient-to-r from-indigo-600 to-violet-600 text-white h-12 w-12 rounded-xl md:h-12 md:w-16 md:rounded-none`
+              ? `group relative flex items-center justify-center transition-all duration-300 bg-gradient-to-r from-indigo-600 to-violet-600 text-white h-12 w-12 rounded-xl md:h-12 md:w-16 md:rounded-none`
               : `group relative flex items-center justify-center transition-all duration-300 text-white/80 hover:bg-white/5 hover:text-white h-12 w-12 rounded-xl md:h-12 md:w-16 md:rounded-none`
 
             return (
