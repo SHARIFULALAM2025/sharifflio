@@ -53,7 +53,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] px-4 py-10 md:px-10">
       <div className="max-w-6xl mx-auto">
         {/* Hero Image */}
-        <div className="relative w-full aspect-[16/9] rounded-2xl overflow-hidden mb-8 border border-[var(--border)]">
+        <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-8 border border-[var(--border)]">
           <Image
             src={image}
             alt={title}
@@ -65,13 +65,13 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
           <div className="absolute bottom-6 left-6">
-            <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-[var(--primary)] via-[var(--primary-light)] to-[var(--accent)] bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-extrabold  bg-gradient-to-r from-indigo-600 to-violet-600 bg-clip-text text-transparent">
               {title}
             </h1>
-            <p className="text-[var(--muted)] text-sm md:text-base mt-1">
+            <p className="text-[var(--muted)] font-bold text-sm md:text-base mt-1  bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text text-transparent">
               {fullTitle}
             </p>
-            <span className="mt-3 inline-block bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white text-sm font-semibold px-4 py-1.5 rounded-full capitalize">
+            <span className="mt-3 inline-block bg-gradient-to-r from-[var(--primary)] to-[var(--accent)] text-white text-sm font-semibold px-4 py-1.5 rounded-xl capitalize">
               {category}
             </span>
           </div>
@@ -98,7 +98,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
             href={liveLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-[var(--primary)] text-white font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--primary-light)] transition"
+            className="flex items-center gap-2 bg-[var(--primary)] text-white font-semibold px-5 py-2.5 rounded-xl hover:bg-[var(--primary-light)] transition"
           >
             <BiGlobe size={18} />
             View Live Demo
@@ -107,7 +107,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
             href={githubClient}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--card-hover)] transition"
+            className="flex items-center gap-2 bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] font-semibold px-5 py-2.5 rounded-xl hover:bg-[var(--card-hover)] transition"
           >
             <GiThunderBlade size={18} />
             Frontend Code
@@ -117,7 +117,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
               href={githubServer}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] font-semibold px-5 py-2.5 rounded-full hover:bg-[var(--card-hover)] transition"
+              className="flex items-center gap-2 bg-[var(--card)] border border-[var(--border)] text-[var(--foreground)] font-semibold px-5 py-2.5 rounded-xl hover:bg-[var(--card-hover)] transition"
             >
               <MdQrCode2 size={18} />
               Backend Code
@@ -139,7 +139,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
         </div>
 
         {/* Project Overview */}
-        <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-8 md:p-12 mb-12">
+        <div className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-8 md:p-12 mb-12">
           <h2 className="text-3xl font-bold text-center mb-6">
             Project Overview
           </h2>
@@ -187,7 +187,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
 
         {/* Tech Stack breakdown */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-          <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+          <div className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-6">
             <h3 className="text-xl font-bold mb-4 text-[var(--primary-light)]">
               Frontend
             </h3>
@@ -195,14 +195,14 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
               {techStack.frontend.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="bg-[var(--card-hover)] border border-[var(--border)] px-4 py-1.5 rounded-full text-sm"
+                  className="bg-[var(--card-hover)] border border-[var(--border)] px-4 py-1.5 rounded-xl text-sm"
                 >
                   {tech}
                 </span>
               ))}
             </div>
           </div>
-          <div className="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+          <div className="bg-[var(--card)] border border-[var(--border)] rounded-xl p-6">
             <h3 className="text-xl font-bold mb-4 text-[var(--accent)]">
               Backend
             </h3>
@@ -210,7 +210,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
               {techStack.backend.map((tech, idx) => (
                 <span
                   key={idx}
-                  className="bg-[var(--card-hover)] border border-[var(--border)] px-4 py-1.5 rounded-full text-sm"
+                  className="bg-[var(--card-hover)] border border-[var(--border)] px-4 py-1.5 rounded-xl text-sm"
                 >
                   {tech}
                 </span>
@@ -223,7 +223,7 @@ const ProjectDetails = ({ singleData }: ProjectDetailsProps) => {
         <div className="flex justify-center">
           <Link
             href="/projects"
-            className="flex items-center gap-2 bg-[var(--primary)] text-white font-semibold px-6 py-2.5 rounded-full hover:bg-[var(--primary-light)] transition"
+            className="flex items-center gap-2 bg-[var(--primary)] text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-[var(--primary-light)] transition"
           >
             <CgArrowLeft size={18} />
             Back to Projects

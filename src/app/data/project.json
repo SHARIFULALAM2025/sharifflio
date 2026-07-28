@@ -26,34 +26,47 @@
     "role": "Frontend Developer",
     "status": "complete"
   },
-  {
+   {
     "id": 2,
-    "title": "BookCourier - Smart Book Delivery & Management",
-    "fullTitle": "BookCourier - Smart Book Delivery & Management",
-    "image": "https://i.ibb.co.com/0VYcgYqx/Capture.png",
-    "description": "BookCourier is a library delivery management system where a users can request book pickup or delivery from this near libraries. a user can easily order a book and easily payment . it is A fast, modern and user-friendly web application for delivering books to the doorsteps of users in Bangladesh. This project provides an online library interface with book browsing, searching, sorting, user authentication, payment integration and complete delivery coverage mapping.",
-    "purpose": "BookCourier aims to bridge the gap between readers and libraries with an intuitive UI, fast delivery support, and secure payment integration.",
+    "title": "Travel",
+    "fullTitle": "Travel - Planning and Review Platform",
+    "image": "https://i.ibb.co.com/bg6srjsK/Capohkjgjhkfture.jpg",
+    "description": "A modern full-stack Travel Planning and Review Platform that allows users to explore destinations, browse hotels & rooms, shop travel products, manage wishlist and cart in real-time, book packages with multi-criteria filtering (location, date, guests), write reviews, and complete secure payments via SSLCommerz. The platform features dual-role dashboards (User/Admin), full bilingual support (English & Bangla) with Next-intl, private routes, forgot/reset password flow, blog section, and a responsive, animated UI optimized for all devices.",
+    "purpose": "To provide a complete, secure, and user-friendly digital solution for travelers in Bangladesh and beyond — enabling seamless destination discovery, booking, shopping, reviewing, and payment while giving admins full control over users, products, destinations, orders, and content.",
     "features": [
-      "Real-time Book Search & Filtering (Title, Price, Ratings)",
-      "Interactive Leaflet Map for Coverage Tracking",
-      "Stripe Payment Gateway Integration",
-      "Role-Based Dashboard (Admin & User)",
-      "Dynamic Feedback Slider with Ratings",
-      "Responsive UI/UX optimized for all devices"
+      "Secure dual-role dashboard (User & Admin) with NextAuth.js authentication (credentials + Google/GitHub), private routes, and forgot/reset password system",
+      "Real-time cart & wishlist management powered by TanStack Query for smooth state handling and caching",
+      "SSLCommerz payment gateway integration with full order tracking (success/fail/cancel flows)",
+      "Multi-criteria filtering system (location, date range, number of guests) for destinations, hotels, and packages",
+      "Full site localization (i18n) with Next-intl supporting English and Bangla",
+      "Destination exploration, popular destinations, hotel/room listings, travel product shop, blog, and user reviews & comments",
+      "Admin dashboard for managing users, products, destinations, orders, blogs, and reviews",
+      "Dark mode support, responsive UI/UX, and smooth animations with Framer Motion"
     ],
     "techStack": {
       "frontend": [
-        "React",
-        "Vite",
+        "Next.js 16 (App Router)",
+        "React 19",
         "Tailwind CSS",
-        "Material UI",
         "TanStack Query",
-        "Framer Motion"
+        "NextAuth.js",
+        "Next-intl (i18n)",
+        "Framer Motion",
+        "React Hook Form",
+        "Axios",
+        "Next-themes"
       ],
-      "backend": ["Express.js", "MongoDB Atlas", "Stripe", "Firebase Auth"]
+      "backend": [
+        "Express.js",
+        "MongoDB",
+        "SSLCommerz",
+        "Bcryptjs",
+        "CORS",
+        "Dotenv"
+      ]
     },
-    "liveLink": "https://assignment-11-7f7d0.web.app",
-    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-11",
+    "liveLink": "https://travel-planning-ivory.vercel.app/en",
+    "githubClient": "https://github.com/SHARIFULALAM2025/Travel_Planning",
     "featured": true,
     "category": "fullstack",
     "role": "Frontend Developer",
@@ -61,38 +74,145 @@
   },
   {
     "id": 3,
-    "title": "HomeNest",
-    "fullTitle": "HomeNest - Modern Real Estate Marketplace",
-    "image": "https://i.ibb.co.com/9m5RhmhR/Captsrsfure.png",
-    "description": "A comprehensive real estate platform for buying, selling, and renting properties with advanced search and secure management.",
-    "purpose": "HomeNest simplifies property transactions by centralizing listings, enhancing transparency between owners and seekers, and providing a seamless management dashboard.",
+    "title": "Sharif Academy",
+    "fullTitle": "Sharif Academy - Online Learning & Skill Development Platform",
+    "image":"https://i.ibb.co.com/ynvMFz1Q/Captugfgmkhmfkmre.jpg",
+    "description": "Sharif Academy is a modern full-stack online learning platform designed for Bangla-speaking students. It offers affordable skill-based courses in Programming, Graphic Design, Digital Marketing, Freelancing, English, and Business. Users can register, browse courses by category, enroll via subscription plans, take topic-wise MCQ exams with negative marking, view detailed results, earn certificates, and learn from industry expert teachers — all from home with lifetime access and a 30-day refund guarantee.",
+    "purpose": "To make world-class skill education accessible and affordable for students in Bangladesh by removing the need for physical travel, providing expert-led Bangla courses, regular topic-wise exams, recognized certificates, and flexible subscription plans that help learners build real careers.",
     "features": [
-      "Private Routes: Only authenticated users can access listing details.",
-      "CRUD Operations: Users can Add, Update, and Delete their own property listings.",
-      "Advanced Filtering: Search by location, price range, and property type.",
-      "User-Specific Data: Personalized dashboard to view own properties and ratings.",
-      "Secure Booking: Users can view recent properties and book them instantly.",
-      "Rating System: Integration of @smastrom/react-rating for property feedback."
+      "Secure authentication system with email/password, Google, and Facebook login powered by better-auth, including forgot password flow",
+      "Course catalog with category filtering (Programming, Graphic Design, Digital Marketing, Freelancing, English, Business) and popular/trending courses",
+      "Topic-wise MCQ exam system with auto-submit, negative marking (0.25), score calculation, and detailed result page showing correct/wrong answers",
+      "Subscription plans (Basic, Pro, Team/Institution) with certificates, lifetime access, live class access, mentoring, and 30-day money-back guarantee",
+      "Expert teacher profiles, student success stories, and educational blog/resources section",
+      "Question interaction features (like, dislike, favourite, view count) stored in PostgreSQL",
+      "Full Bangla-first interface with i18n support, math formula rendering (KaTeX), responsive design, and modern UI with Tailwind CSS",
+      "User dashboard for tracking enrolled courses, exam history, and progress"
     ],
     "techStack": {
       "frontend": [
+        "Next.js 16 (App Router)",
         "React 19",
-        "Vite",
+        "TypeScript",
         "Tailwind CSS",
-        "DaisyUI",
-        "React Router"
+        "better-auth",
+        "i18next / react-i18next",
+        "React Hook Form",
+        "Axios",
+        "Lucide React",
+        "KaTeX"
       ],
-      "backend": ["MongoDB", "Firebase Auth", "Dotenv"]
+      "backend": [
+        "Express.js",
+        "TypeScript",
+        "PostgreSQL",
+        "Kysely ORM",
+        "better-auth",
+        "CORS",
+        "Dotenv"
+      ]
     },
-    "liveLink": "https://rococo-bombolone-0cae58.netlify.app",
-    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-10",
-    "featured": false,
+    "liveLink": "https://sharif-academy.vercel.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/SharifAcademy",
+    "featured": true,
     "category": "fullstack",
     "role": "Frontend Developer",
     "status": "complete"
   },
-  {
+   {
     "id": 4,
+    "title": "Career Track",
+    "fullTitle": "Career Track Lite - Job Application Tracker",
+    "image": "https://i.ibb.co.com/v6BJ8nYg/Capturerrjttre.jpg",
+    "description": "Career Track Lite is a full-stack job application tracking platform that helps job seekers eliminate the chaos of managing multiple applications. Users can register securely, add applications with company name, job title, source (LinkedIn, Bdjobs, etc.), status, date and notes, then track everything from a clean dashboard. The system shows instant counts of applications at every stage (Saved → Applied → Assessment → Interview → Rejected → Offer) along with search, filter, sort and recent activity.",
+    "purpose": "To give job seekers a single, organized place to track every application’s status, source and progress so they can clearly see how many opportunities sit at each stage and never lose track of their job search.",
+    "features": [
+      "Secure JWT-based authentication (register/login) with protected routes and user profile",
+      "Centralized dashboard showing total applications and live status counts (Saved, Applied, Assessment, Interview, Rejected, Offer)",
+      "Full CRUD for job applications: company name, job title, job URL, source, status, application date and notes",
+      "Advanced search, filter by status/source and multi-field sorting (date, company, status)",
+      "Application details view and edit functionality with ownership protection",
+      "Recent applications list on the dashboard for quick overview",
+      "Dark mode support and fully responsive UI built with Tailwind CSS",
+      "Clean, modern interface focused on reducing job-search anxiety and improving organization"
+    ],
+    "techStack": {
+      "frontend": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "React Router DOM",
+        "Tailwind CSS",
+        "Axios",
+        "React Hook Form",
+        "SweetAlert2"
+      ],
+      "backend": [
+        "Express.js",
+        "TypeScript",
+        "Prisma ORM",
+        "PostgreSQL",
+        "JWT (jsonwebtoken)",
+        "Bcryptjs",
+        "CORS",
+        "Dotenv"
+      ]
+    },
+    "liveLink": "https://carrer-traker.vercel.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/carrerTraker",
+    "featured": true,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },{
+    "id": 5,
+    "title": "Mini ERP",
+    "fullTitle": "Mini ERP – Inventory & Sales Management System",
+    "image": "https://i.ibb.co.com/7Jzx7pBY/Captukjre.jpg",
+    "description": "Mini ERP is a full-stack Inventory & Sales Management System focused on the frontend experience. It provides JWT-based login, role-based protected routes (Admin, Manager, Employee), a statistics dashboard with low-stock alerts, complete product CRUD with search, pagination and image upload, and a multi-product sales flow with automatic total calculation. Built with React 19, TypeScript, Redux Toolkit for auth state and TanStack Query for server-state management.",
+    "purpose": "To give small businesses a clean, role-aware inventory and sales management interface where employees can view products and create sales while managers and admins can fully manage the product catalog, all backed by a secure JWT-authenticated API.",
+    "features": [
+      "JWT-based authentication with secure login and session management via Redux Toolkit",
+      "Protected routes and role-based access control (Admin, Manager, Employee)",
+      "Dashboard with statistics cards and low-stock product list for quick inventory overview",
+      "Product management: list, search, pagination, add, edit, delete with image upload support",
+      "Role-aware UI that hides Add/Edit/Delete product actions from the Employee role",
+      "Sales creation flow supporting multiple products, quantity input and automatic grand-total calculation",
+      "Server state handled by TanStack Query (fetching, caching, mutations) and Axios HTTP client",
+      "Modern UI built with Tailwind CSS v4 and Shadcn/ui components",
+      "Email:admin@erp.com ,Password:Admin@123"
+    ],
+    "techStack": {
+      "frontend": [
+        "React 19",
+        "TypeScript",
+        "Vite",
+        "React Router v7",
+        "Tailwind CSS v4",
+        "Shadcn/ui",
+        "Redux Toolkit",
+        "TanStack Query",
+        "Axios",
+        "Lucide React"
+      ],
+      "backend": [
+        "Express.js",
+        "TypeScript",
+        "MongoDB (Mongoose)",
+        "JWT",
+        "Bcryptjs",
+        "Multer + ImgBB"
+      ]
+    },
+    "liveLink": "https://inventory-management-frontend-5542.vercel.app/login",
+    "githubClient": "https://github.com/SHARIFULALAM2025/Inventory_Management_Frontend",
+    "featured": true,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },
+    {
+    "id": 6,
     "title": "Care.xyz",
     "fullTitle": "Care.xyz - On-Demand Caregiving Platform",
     "image": "https://i.ibb.co.com/BKdpw6Nj/Captfthtfhure.png",
@@ -130,7 +250,7 @@
     "status": "complete"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "E-commercial-website",
     "role":"Frontend Developer",
     "status":"complete",
@@ -152,6 +272,73 @@
     "liveLink": "https://my-website-kappa-blue.vercel.app",
     "githubClient": "https://github.com/SHARIFULALAM2025/E-commercial-website/tree/main/frontend/my-website",
     "featured": true,
-    "category": "fullstack"
+    "category": "frontend"
+  },
+  {
+    "id": 8,
+    "title": "BookCourier - Smart Book Delivery & Management",
+    "fullTitle": "BookCourier - Smart Book Delivery & Management",
+    "image": "https://i.ibb.co.com/0VYcgYqx/Capture.png",
+    "description": "BookCourier is a library delivery management system where a users can request book pickup or delivery from this near libraries. a user can easily order a book and easily payment . it is A fast, modern and user-friendly web application for delivering books to the doorsteps of users in Bangladesh. This project provides an online library interface with book browsing, searching, sorting, user authentication, payment integration and complete delivery coverage mapping.",
+    "purpose": "BookCourier aims to bridge the gap between readers and libraries with an intuitive UI, fast delivery support, and secure payment integration.",
+    "features": [
+      "Real-time Book Search & Filtering (Title, Price, Ratings)",
+      "Interactive Leaflet Map for Coverage Tracking",
+      "Stripe Payment Gateway Integration",
+      "Role-Based Dashboard (Admin & User)",
+      "Dynamic Feedback Slider with Ratings",
+      "Responsive UI/UX optimized for all devices"
+    ],
+    "techStack": {
+      "frontend": [
+        "React",
+        "Vite",
+        "Tailwind CSS",
+        "Material UI",
+        "TanStack Query",
+        "Framer Motion"
+      ],
+      "backend": ["Express.js", "MongoDB Atlas", "Stripe", "Firebase Auth"]
+    },
+    "liveLink": "https://assignment-11-7f7d0.web.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-11",
+    "featured": true,
+    "category": "fullstack",
+    "role": "Frontend Developer",
+    "status": "complete"
+  },
+  {
+    "id": 9,
+    "title": "HomeNest",
+    "fullTitle": "HomeNest - Modern Real Estate Marketplace",
+    "image": "https://i.ibb.co.com/9m5RhmhR/Captsrsfure.png",
+    "description": "A comprehensive real estate platform for buying, selling, and renting properties with advanced search and secure management.",
+    "purpose": "HomeNest simplifies property transactions by centralizing listings, enhancing transparency between owners and seekers, and providing a seamless management dashboard.",
+    "features": [
+      "Private Routes: Only authenticated users can access listing details.",
+      "CRUD Operations: Users can Add, Update, and Delete their own property listings.",
+      "Advanced Filtering: Search by location, price range, and property type.",
+      "User-Specific Data: Personalized dashboard to view own properties and ratings.",
+      "Secure Booking: Users can view recent properties and book them instantly.",
+      "Rating System: Integration of @smastrom/react-rating for property feedback."
+    ],
+    "techStack": {
+      "frontend": [
+        "React 19",
+        "Vite",
+        "Tailwind CSS",
+        "DaisyUI",
+        "React Router"
+      ],
+      "backend": ["MongoDB", "Firebase Auth", "Dotenv"]
+    },
+    "liveLink": "https://rococo-bombolone-0cae58.netlify.app",
+    "githubClient": "https://github.com/SHARIFULALAM2025/AssignmentClient-10",
+    "featured": false,
+    "category": "frontend",
+    "role": "Frontend Developer",
+    "status": "complete"
   }
+
+
 ]
