@@ -143,7 +143,7 @@ export default function Home() {
           className="flex flex-wrap items-center justify-center gap-4"
         >
           <a
-            href="/fullstackDeveloper_Shariful_Alam.pdf"
+            href="/fullstackDeveloper_Shariful_Alam-SharifulAlam.pdf"
             download
             className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-indigo-600 px-6 py-3 text-sm font-medium text-white shadow-lg shadow-violet-500/25 transition hover:opacity-90"
           >
