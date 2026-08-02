@@ -80,13 +80,13 @@ export default function Home() {
           transition={{ duration: 0.6 }}
           className="relative mb-6"
         >
-          <div className="relative overflow-hidden rounded-2xl border-2 border-violet-500/60 bg-slate-900/60 shadow-[0_0_40px_rgba(139,92,246,0.4)] h-36 w-36 sm:h-44 sm:w-44 md:h-52 md:w-52 lg:h-96 lg:w-96 lg:border-4">
+          <div className="relative overflow-hidden rounded-2xl border-2 border-violet-500/60  shadow-[0_0_40px_rgba(139,92,246,0.4)] h-36 w-36 sm:h-44 sm:w-44 md:h-52 md:w-52 lg:h-96 lg:w-96 lg:border-4">
             <Image
               src="https://i.ibb.co.com/Q3smQfRJ/Chat-GPT-Image-Aug-2-2026-03-47-10-PM.png"
               alt="SHARIFUL ALAM"
               fill
               sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, (max-width: 1024px) 208px, 240px"
-              className="object-top"
+              className="object-top bg-slate-900/60"
               priority
             />
           </div>
