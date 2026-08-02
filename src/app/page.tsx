@@ -82,7 +82,7 @@ export default function Home() {
         >
           <div className="relative overflow-hidden rounded-2xl border-2 border-violet-500/60  shadow-[0_0_40px_rgba(139,92,246,0.4)] h-36 w-36 sm:h-44 sm:w-44 md:h-52 md:w-52 lg:h-96 lg:w-96 lg:border-4">
             <Image
-              src="https://i.ibb.co.com/Q3smQfRJ/Chat-GPT-Image-Aug-2-2026-03-47-10-PM.png"
+              src="https://i.ibb.co.com/43DVMMk/Chat-GPT-Image-Aug-2-2026-03-47-10-PM-removebg-preview.png"
               alt="SHARIFUL ALAM"
               fill
               sizes="(max-width: 640px) 144px, (max-width: 768px) 176px, (max-width: 1024px) 208px, 240px"
