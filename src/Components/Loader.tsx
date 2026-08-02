@@ -66,7 +66,7 @@ const Loader = ({ children }: LoaderProps) => {
             {/* Logo container */}
             <div className="relative h-9 w-9 xs:h-10 xs:w-10 sm:h-12 sm:w-12 md:h-14 md:w-14 rounded-full overflow-hidden flex items-center justify-center bg-[var(--card)] ring-2 ring-[var(--primary)]/40">
               <Image
-                src="/image/profile.jpg"
+                src="https://i.ibb.co.com/43DVMMk/Chat-GPT-Image-Aug-2-2026-03-47-10-PM-removebg-preview.png"
                 width={56}
                 height={56}
                 className="object-top w-full h-full"
